@@ -1,0 +1,18 @@
+optimized.py
+Naam: Mark Jansen 13385569
+Datum: 18 december, 2022
+
+Optimalisatie 1:
+De eerste optimalisatie maakt gebruik van backtracking. Backtracking kiest een literal
+en wijst een waarde toe. Dit vereenvoudigd het probleem en checkt op recursieve methode
+of de vereenvoudigde te voldoen is. Zo niet dan wordt opnieuw de recursieve check gedaan, maar
+dan met de tegenovergestelde waarde. Deze methode wordt ook wel de splitting-rule genoemd.
+
+Een afbeelding:
+https://en.wikipedia.org/wiki/File:Dpll11.png
+
+Optimalisatie 2:
+Is het optimaliseren van het algoritme door gebruik te maken van de eigenschap
+unit clauses. Hierdoor kan je een unit propagation techniek toepassen die de
+unit clauses verwijdert waar de zelfde literal in staat, en de negation van de literal
+kunt verwijderen uit andere clauses, zodat je minder naive search space overhoud.
